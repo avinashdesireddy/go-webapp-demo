@@ -4,4 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - ../../../apps/podinfo
-- ../../../apps/go-webapp
+- ../../../apps/go-webapp/deploy
