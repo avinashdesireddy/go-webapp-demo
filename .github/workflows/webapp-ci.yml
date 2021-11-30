@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file apps/go-webapp/src/Dockerfile --tag avinashdesireddy/go-webapp:$(date +%s)
+      run: |
+        cd apps/go-webapp/src
+        docker build . --file Dockerfile --tag avinashdesireddy/go-webapp:$(date +%s)
