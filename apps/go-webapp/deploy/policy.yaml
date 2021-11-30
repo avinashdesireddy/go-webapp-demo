@@ -4,8 +4,10 @@ metadata:
   name: webapp-policy
   namespace: flux-system
 spec:
+  filterTags:
+    pattern: '*'
   imageRepositoryRef:
-    name: webapp
+    name: go-webapp
   policy:
     numerical:
       order: asc
