@@ -4,6 +4,8 @@ metadata:
   name: webapp-policy
   namespace: flux-system
 spec:
+  imageRepositoryRef:
+    name: webapp
   policy:
     semver:
       range: '>=1.0.0'
