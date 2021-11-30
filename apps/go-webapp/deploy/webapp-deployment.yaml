@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: podinfo
+  name: webapp
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: podinfo
+      app: webapp
   template:
     metadata:
       labels:
-        app: podinfo
+        app: webapp
     spec:
       containers:
-        - name: podinfod
+        - name: webapp
           image: ghcr.io/stefanprodan/podinfo:5.0.0
           imagePullPolicy: IfNotPresent
           ports:
