@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   filterTags:
-    pattern: '*'
+    pattern: 'latest'
   imageRepositoryRef:
     name: go-webapp
   policy:
