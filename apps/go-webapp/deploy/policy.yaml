@@ -6,3 +6,6 @@ metadata:
 spec:
   imageRepositoryRef:
     name: webapp
+  policy:
+    numerical:
+      order: asc
