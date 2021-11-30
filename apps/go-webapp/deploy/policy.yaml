@@ -9,5 +9,5 @@ spec:
   imageRepositoryRef:
     name: go-webapp
   policy:
-    numerical:
+    alphabetical:
       order: asc
