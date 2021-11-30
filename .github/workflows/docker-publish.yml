@@ -50,5 +50,5 @@ jobs:
         with:
           context: apps/go-webapp/src
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ sha }}
           labels: ${{ steps.meta.outputs.labels }}
