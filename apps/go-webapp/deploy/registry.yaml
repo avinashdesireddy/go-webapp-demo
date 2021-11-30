@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: go-webapp
+  namespace: flux-system
+spec:
+  image: docker.io/avinashdesireddy/go-webapp
+  interval: 1m0s
