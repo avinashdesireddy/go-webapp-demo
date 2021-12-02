@@ -13,4 +13,4 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: avinashdesireddy/go-webapp:latest
+        image: avinashdesireddy/go-webapp:latest # {"$imagepolicy": "flux-system:go-webapp"}
